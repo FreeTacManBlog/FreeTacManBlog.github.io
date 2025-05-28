@@ -4,7 +4,7 @@ export const pageNavigator: {
         id: string;
     }[]
 } = {
-    "/freetacman": [
+    "/": [
         {
             text: "Highlights",
             id: "highlights",
