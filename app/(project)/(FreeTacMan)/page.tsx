@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   description: "FreeTacMan",
   keywords: ["FreeTacMan", "OpenDriveLab", "HKU", "SII"],
 };
-
+import "./globals.css";
 import Link from "next/link";
 import {
   Card,
@@ -42,6 +42,7 @@ import { UserStudy5 } from "@/components/project/freetacman/chart/user-study-5";
 import { UserStudy6 } from "@/components/project/freetacman/chart/user-study-6";
 import { UserStudy7 } from "@/components/project/freetacman/chart/user-study-7";
 import { UserStudy8 } from "@/components/project/freetacman/chart/user-study-8";
+import { color } from "framer-motion";
 
 const policy_rollouts: { id: string; title: string; color: string }[] = [
   {
@@ -78,26 +79,33 @@ export default function Home() {
       <div className="w-full min-h-screen flex flex-col items-center px-6 bg-[#eaeaea]">
         <div className="flex flex-col py-20 gap-6 w-full h-full max-w-[1792px] justify-around items-center">
           <div className="color-text-1">
-            <h1 className="text-8xl lg:text-8xl font-bold text-center">
+            <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold text-center">
               FreeTacMan
             </h1>
-            <h1 className="text-3xl lg:text-3xl font-bold text-center">
+            <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-center mt-4">
               Robot-free Visuo-Tactile Data Collection System<br></br>for
               Contact-rich Manipulation
             </h1>
           </div>
           <div className="flex flex-col justify-center gap-6">
-            <div className="text-base text-center">
+            <div className="text-sm sm:text-base text-center">
               <div className="mb-2">
-                <span >Longyan Wu</span><sup>1,4*</sup> &nbsp;
-                <span >Checheng Yu</span><sup>1,5*</sup> &nbsp;
-                <span >Jieji Ren</span><sup>3*</sup> &nbsp;
-                <span >Li Chen</span><sup>2</sup>
+                <span>Longyan Wu</span>
+                <sup>1,4*</sup> &nbsp;
+                <span>Checheng Yu</span>
+                <sup>1,5*</sup> &nbsp;
+                <span>Jieji Ren</span>
+                <sup>3*</sup> &nbsp;
+                <span>Li Chen</span>
+                <sup>2</sup>
               </div>
               <div className="mb-2">
-                <span >Ran Huang</span><sup>4</sup> &nbsp;
-                <span >Guoying Gu</span><sup>3</sup> &nbsp;
-                <span >Hongyang Li</span><sup>2,1</sup>
+                <span>Ran Huang</span>
+                <sup>4</sup> &nbsp;
+                <span>Guoying Gu</span>
+                <sup>3</sup> &nbsp;
+                <span>Hongyang Li</span>
+                <sup>2,1</sup>
               </div>
               <div className="mb-2">
                 <sup>1</sup>Shanghai Innovation Institute &nbsp;
@@ -112,16 +120,16 @@ export default function Home() {
                 <span className="text-red-600 font-semibold">arXiv 2025</span>
               </div>
               <div className="mt-4 flex flex-row justify-center gap-4">
-                <a 
-                  href="https://arxiv.com" 
+                <a
+                  href="https://arxiv.com"
                   className="px-4 py-2 bg-white text-[#174BE5] rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border border-gray-200"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Paper
                 </a>
-                <a 
-                  href="https://github.com/OpenDriveLab/FreeTacMan" 
+                <a
+                  href="https://github.com/OpenDriveLab/FreeTacMan"
                   className="px-4 py-2 bg-white text-[#174BE5] rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border border-gray-200"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -167,12 +175,12 @@ export default function Home() {
         <div className="flex-1 w-full flex flex-col">
           {/* Highlights */}
           <div
-            className="w-full pl-6 pr-6 flex flex-col items-center"
+            className="w-full pl-2 pr-2 sm:pl-6 sm:pr-6 flex flex-col items-center"
             id="highlights"
           >
-            <div className="w-full flex flex-col items-center mt-16">
+            <div className="w-full flex flex-col items-center mt-8 sm:mt-16">
               <div className="w-full max-w-7xl flex flex-row justify-between">
-                <h2 className="text-3xl font-bold">
+                <h2 className="text-2xl sm:text-3xl font-bold">
                   <Link
                     href="#highlights"
                     className="scroll-mt-32 group flex items-center"
@@ -200,7 +208,7 @@ export default function Home() {
                 </h2>
               </div>
             </div>
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
+            <div className="w-full pl-2 pr-2 sm:pl-6 sm:pr-6 flex flex-col items-center">
               <div className="w-full flex flex-col items-center mt-20">
                 <div className="w-full max-w-5xl flex flex-row justify-between">
                   <div className="flex flex-col gap-6">
@@ -243,20 +251,22 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
+            <div className="w-full pl-2 pr-2 sm:pl-6 sm:pr-6 flex flex-col items-center">
               <div className="w-full max-w-7xl mt-20">
                 <Tabs
                   defaultValue="01"
-                  className="flex flex-row w-full gap-6 h-[576px]"
+                  className="flex flex-col md:flex-row w-full gap-4 sm:gap-6 h-auto md:h-[576px]"
                 >
-                  <TabsList className="flex flex-col justify-between gap-6 h-full w-[30%]">
+                  <TabsList className="flex flex-row md:flex-col justify-between gap-2 sm:gap-6 h-auto md:h-full w-full md:w-[30%] mb-4 md:mb-0">
                     <TabsTrigger
                       value="01"
                       key="01"
-                      className="data-[state=active]:text-[#174BE5] disabled:pointer-events-none flex flex-col py-6 px-3 justify-around rounded-xl text-background font-bold bg-[url('https://opendrivelab.github.io/FreeTacMan/highlights/01.png')] bg-center bg-cover bg-black bg-opacity-50 bg-blend-overlay w-full h-1/3"
+                      className="data-[state=active]:text-[#174BE5] disabled:pointer-events-none flex flex-col py-2 sm:py-6 px-1 sm:px-3 justify-around rounded-xl text-background font-bold bg-[url('https://opendrivelab.github.io/FreeTacMan/highlights/01.png')] bg-center bg-cover bg-black bg-opacity-50 bg-blend-overlay w-full h-auto md:h-1/3"
                     >
-                      <h2 className="text-4xl lg:text-5xl xl:text-6xl">01</h2>
-                      <p className="text-sm lg:text-base xl:text-lg">
+                      <h2 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl">
+                        01
+                      </h2>
+                      <p className="text-xs sm:text-sm lg:text-base xl:text-lg">
                         Portable, High-resolution, Low-cost<br></br>
                         Visuo-Tactile Hardware Sensor
                       </p>
@@ -264,10 +274,12 @@ export default function Home() {
                     <TabsTrigger
                       value="02"
                       key="02"
-                      className="data-[state=active]:text-[#174BE5] disabled:pointer-events-none flex flex-col py-6 px-3 justify-around rounded-xl text-background font-bold bg-[url('https://opendrivelab.github.io/FreeTacMan/highlights/02.png')] bg-center bg-cover bg-black bg-opacity-50 bg-blend-overlay w-full h-1/3"
+                      className="data-[state=active]:text-[#174BE5] disabled:pointer-events-none flex flex-col py-2 sm:py-6 px-1 sm:px-3 justify-around rounded-xl text-background font-bold bg-[url('https://opendrivelab.github.io/FreeTacMan/highlights/02.png')] bg-center bg-cover bg-black bg-opacity-50 bg-blend-overlay w-full h-auto md:h-1/3"
                     >
-                      <h2 className="text-4xl lg:text-5xl xl:text-6xl">02</h2>
-                      <p className="text-sm lg:text-base xl:text-lg">
+                      <h2 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl">
+                        02
+                      </h2>
+                      <p className="text-xs sm:text-sm lg:text-base xl:text-lg">
                         In-situ, Robot-free, Real-time Tactile<br></br>
                         Data-collection System
                       </p>
@@ -275,10 +287,12 @@ export default function Home() {
                     <TabsTrigger
                       value="03"
                       key="03"
-                      className="data-[state=active]:text-[#174BE5] disabled:pointer-events-none flex flex-col py-6 px-3 justify-around rounded-xl text-background font-bold bg-[url('https://opendrivelab.github.io/FreeTacMan/highlights/03.png')] bg-center bg-cover bg-black bg-opacity-50 bg-blend-overlay w-full h-1/3"
+                      className="data-[state=active]:text-[#174BE5] disabled:pointer-events-none flex flex-col py-2 sm:py-6 px-1 sm:px-3 justify-around rounded-xl text-background font-bold bg-[url('https://opendrivelab.github.io/FreeTacMan/highlights/03.png')] bg-center bg-cover bg-black bg-opacity-50 bg-blend-overlay w-full h-auto md:h-1/3"
                     >
-                      <h2 className="text-4xl lg:text-5xl xl:text-6xl">03</h2>
-                      <p className="text-sm lg:text-base xl:text-lg">
+                      <h2 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl">
+                        03
+                      </h2>
+                      <p className="text-xs sm:text-sm lg:text-base xl:text-lg">
                         Visuo-Tactile Policy Learning <br></br> Tactile
                         Pretraining
                       </p>
@@ -316,14 +330,14 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
+            <div className="w-full pl-2 pr-2 sm:pl-6 sm:pr-6 flex flex-col items-center">
               <Separator className="max-w-7xl mt-28" />
             </div>
           </div>
 
           {/* FreeTacMan 3D Model  */}
           <div
-            className="w-full pl-6 pr-6 flex flex-col items-center"
+            className="w-full pl-2 pr-2 sm:pl-6 sm:pr-6 flex flex-col items-center"
             id="model"
           >
             <div className="w-full flex flex-col items-center mt-16">
@@ -356,11 +370,11 @@ export default function Home() {
                 </h2>
               </div>
             </div>
-            <div className="my-10 flex flex-col items-center pl-6 pr-6 inset-0 w-full">
-              <div className="w-full max-w-7xl my-5">
-                <div className="flex flex-col gap-5 h-full">
-                  <div className="flex flex-col justify-center gap-5">
-                    <span className="font-bold text-2xl text-center">
+            <div className="my-6 sm:my-10 flex flex-col items-center pl-2 pr-2 sm:pl-6 sm:pr-6 inset-0 w-full">
+              <div className="w-full max-w-7xl my-3 sm:my-5">
+                <div className="flex flex-col gap-3 sm:gap-5 h-full">
+                  <div className="flex flex-col justify-center gap-3 sm:gap-5">
+                    <span className="font-bold text-xl sm:text-2xl text-center">
                       Interactive Modal Viewer
                     </span>
                     <p className="text-base text-center max-w-7xl">
@@ -380,13 +394,13 @@ export default function Home() {
                       className="h-[640px] border-4 border-white hover:border-[#174BE5] transition-colors duration-300 rounded-lg"
                     ></iframe>
                   </div>
-                  <div className="w-full object-fit bg-white flex flex-row gap-10 p-10  h-[640px] justify-center">
-                    <div className="flex flex-col gap-5 justify-around">
-                      <div className="flex flex-row justify-around">
-                        <span className="font-bold text-2xl">
+                  <div className="w-full object-fit bg-white flex flex-col sm:flex-row gap-5 sm:gap-10 p-4 sm:p-10 h-auto sm:h-[640px] justify-center">
+                    <div className="flex flex-col gap-3 sm:gap-5 justify-around">
+                      <div className="flex flex-col sm:flex-row justify-around gap-4 sm:gap-0">
+                        <span className="font-bold text-xl sm:text-2xl text-center">
                           FreeTacMan on PIPER
                         </span>
-                        <span className="font-bold text-2xl">
+                        <span className="font-bold text-xl sm:text-2xl text-center">
                           FreeTacMan on FRANKA
                         </span>
                       </div>
@@ -417,13 +431,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full pl-6 pr-6 flex flex-col items-center">
+          <div className="w-full pl-2 pr-2 sm:pl-6 sm:pr-6 flex flex-col items-center">
             <Separator className="max-w-7xl mt-68" />
           </div>
 
           {/* Application  */}
           <div
-            className="w-full pl-6 pr-6 flex flex-col items-center"
+            className="w-full pl-2 pr-2 sm:pl-6 sm:pr-6 flex flex-col items-center"
             id="applications"
           >
             <div className="w-full flex flex-col items-center mt-16">
@@ -456,7 +470,7 @@ export default function Home() {
                 </h2>
               </div>
             </div>
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
+            <div className="w-full pl-2 pr-2 sm:pl-6 sm:pr-6 flex flex-col items-center">
               <div className="w-full flex flex-col items-center mt-20">
                 <div className="w-full max-w-5xl flex flex-row justify-between">
                   <p className="text-base text-left w-full">
@@ -467,124 +481,115 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
+            <div className="w-full pl-2 pr-2 sm:pl-6 sm:pr-6 flex flex-col items-center">
               <div className="w-full max-w-7xl mt-20">
-                {/* <div className="bg-[#98AEF3] mt-20 p-10">
-                                <div className="flex w-full justify-center border-8 bg-[#eaeaea]">
-                                    <span className="text-3xl font-bold text-center p-10  select-none">FreeTacMan</span>
-                                </div>
-                            </div>
-                            <div className="flex justify-center">
-                                <img src="/3d_model/arrowdown.png" className="max-h-48 select-none"/>
-                            </div> */}
                 <div className="border-8 border-[#98AEF3] ">
-                  <div className="p-10 flex flex-row gap-10 justify-around">
-                    <div className="flex flex-col gap-6 max-w-32">
-                      <span className="font-bold text-base text-center">
-                        Fragile Cup Manipulation
-                      </span>
-                      <div className="flex justify-center items-center">
-                        <img
-                          src="https://opendrivelab.github.io/FreeTacMan/task/FragileCupManipulation.png"
-                          className="h-24 select-none"
-                        />
+                  <div className="p-4 sm:p-10 flex flex-wrap gap-6 sm:gap-10 justify-around box-border">
+                    <div className="wrapper">
+                      <div className="flex flex-col gap-6 -w-32">
+                        <span className="font-bold text-base text-center ">
+                          Fragile Cup Manipulation
+                        </span>
+                        <div className="flex justify-center items-center">
+                          <img
+                            src="https://opendrivelab.github.io/FreeTacMan/task/FragileCupManipulation.png"
+                            className="h-24 select-none"
+                          />
+                        </div>
+                      </div>
+                      <div className="flex flex-col gap-6 -w-32">
+                        <span className="font-bold text-base text-center">
+                          USB Plugging
+                        </span>
+                        <div className="flex justify-center items-center">
+                          <img
+                            src="https://opendrivelab.github.io/FreeTacMan/task/USBPlugging.png"
+                            className="h-24 select-none"
+                          />
+                        </div>
+                      </div>
+                      <div className="flex flex-col gap-6 -w-32">
+                        <span className="font-bold text-base text-center">
+                          Texture Classification
+                        </span>
+                        <div className="flex justify-center items-center">
+                          <img
+                            src="https://opendrivelab.github.io/FreeTacMan/task/TextureClassification.png"
+                            className="h-24 select-none"
+                          />
+                        </div>
+                      </div>
+                      <div className="flex flex-col gap-6 -w-32">
+                        <span className="font-bold text-base text-center">
+                          Stamp Pressing
+                        </span>
+                        <div className="flex justify-center items-center">
+                          <img
+                            src="https://opendrivelab.github.io/FreeTacMan/task/StampPressing.png"
+                            className="h-24 select-none"
+                          />
+                        </div>
                       </div>
                     </div>
-                    <div className="flex flex-col gap-6 max-w-32">
-                      <span className="font-bold text text-center">
-                        USB Plugging
-                      </span>
-                      <div className="flex justify-center items-center">
-                        <img
-                          src="https://opendrivelab.github.io/FreeTacMan/task/USBPlugging.png"
-                          className="h-24 select-none"
-                        />
+                    <div className="wrapper">
+                      <div className="flex flex-col gap-6 -w-32">
+                        <span className="font-bold text-base text-center">
+                          Calligraphy Writing
+                        </span>
+                        <div className="flex justify-center items-center">
+                          <img
+                            src="https://opendrivelab.github.io/FreeTacMan/task/CalligraphyWriting.png"
+                            className="h-24 select-none"
+                          />
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex flex-col gap-6 max-w-32">
-                      <span className="font-bold text-base text-center">
-                        Texture Classification
-                      </span>
-                      <div className="flex justify-center items-center">
-                        <img
-                          src="https://opendrivelab.github.io/FreeTacMan/task/TextureClassification.png"
-                          className="h-24 select-none"
-                        />
+                      <div className="flex flex-col gap-6 -w-32">
+                        <span className="font-bold text-base text-center">
+                          Toothpaste Extrusion
+                        </span>
+                        <div className="flex justify-center items-center">
+                          <img
+                            src="https://opendrivelab.github.io/FreeTacMan/task/ToothpasteExtrusion.png"
+                            className="h-24 select-none"
+                          />
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex flex-col gap-6 max-w-32">
-                      <span className="font-bold text-base text-center">
-                        Stamp Pressing
-                      </span>
-                      <div className="flex justify-center items-center">
-                        <img
-                          src="https://opendrivelab.github.io/FreeTacMan/task/StampPressing.png"
-                          className="h-24 select-none"
-                        />
+                      <div className="flex flex-col gap-6 -w-32">
+                        <span className="font-bold text-base text-center">
+                          Tissue Grasping
+                        </span>
+                        <div className="flex justify-center items-center">
+                          <img
+                            src="https://opendrivelab.github.io/FreeTacMan/task/TissueGrasping.png"
+                            className="h-24 select-none"
+                          />
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="p-10 flex flex-row gap-10 justify-around">
-                    <div className="flex flex-col gap-6 max-w-32">
-                      <span className="font-bold text-base text-center">
-                        Calligraphy Writing
-                      </span>
-                      <div className="flex justify-center items-center">
-                        <img
-                          src="https://opendrivelab.github.io/FreeTacMan/task/CalligraphyWriting.png"
-                          className="h-24 select-none"
-                        />
-                      </div>
-                    </div>
-                    <div className="flex flex-col gap-6 max-w-32">
-                      <span className="font-bold text-base text-center">
-                        Toothpaste Extrusion
-                      </span>
-                      <div className="flex justify-center items-center">
-                        <img
-                          src="https://opendrivelab.github.io/FreeTacMan/task/ToothpasteExtrusion.png"
-                          className="h-24 select-none"
-                        />
-                      </div>
-                    </div>
-                    <div className="flex flex-col gap-6 max-w-32">
-                      <span className="font-bold text-base text-center">
-                        Tissue Grasping
-                      </span>
-                      <div className="flex justify-center items-center">
-                        <img
-                          src="https://opendrivelab.github.io/FreeTacMan/task/TissueGrasping.png"
-                          className="h-24 select-none"
-                        />
-                      </div>
-                    </div>
-                    <div className="flex flex-col gap-6 max-w-32">
-                      <span className="font-bold text-base text-center">
-                        Potato Chip Grasping
-                      </span>
-                      <div className="flex justify-center items-center">
-                        <img
-                          src="https://opendrivelab.github.io/FreeTacMan/task/PotatoChipGrasping.png"
-                          className="h-24 select-none"
-                        />
+                      <div className="flex flex-col gap-6 -w-32">
+                        <span className="font-bold text-base text-center">
+                          Potato Chip Grasping
+                        </span>
+                        <div className="flex justify-center items-center">
+                          <img
+                            src="https://opendrivelab.github.io/FreeTacMan/task/PotatoChipGrasping.png"
+                            className="h-24 select-none"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                {/* <p className="text-base text-center mt-10">
-                                We evaluate the effectiveness of FreeTacMan system and the quality of the collected visuo-tactile demonstration through a diverse set of contact-rich manipulation tasks.
-                            </p> */}
               </div>
             </div>
           </div>
 
-          <div className="w-full pl-6 pr-6 flex flex-col items-center">
+          <div className="w-full pl-2 pr-2 sm:pl-6 sm:pr-6 flex flex-col items-center">
             <Separator className="max-w-7xl mt-24" />
           </div>
 
           {/* Policy Rollouts */}
           <div
-            className="w-full pl-6 pr-6 flex flex-col items-center"
+            className="w-full pl-2 pr-2 sm:pl-6 sm:pr-6 flex flex-col items-center"
             id="policy-rollouts"
           >
             <div className="w-full flex flex-col items-center mt-16">
@@ -618,7 +623,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
+            <div className="w-full pl-2 pr-2 sm:pl-6 sm:pr-6 flex flex-col items-center">
               <div className="w-full flex flex-col items-center mt-20">
                 <div className="w-full max-w-5xl flex flex-row justify-between">
                   <p className="text-base text-left w-full">
@@ -652,13 +657,13 @@ export default function Home() {
                 defaultValue={policy_rollouts[0].id}
                 className="flex flex-col w-full"
               >
-                <TabsList className="flex flex-row justify-between gap-6 mb-10">
+                <TabsList className="flex flex-col sm:flex-row justify-between gap-2 sm:gap-6 mb-6 sm:mb-10">
                   {policy_rollouts.map((policy_rollout) => (
                     <TabsTrigger
                       value={policy_rollout.id}
                       key={policy_rollout.id}
                       className={
-                        "shadow-sm rounded-xl w-full  px-1 lg:px-10 py-3 bg-[#eaeaea] font-bold text-background " +
+                        "shadow-sm rounded-xl w-full px-1 lg:px-10 py-2 sm:py-3 bg-[#eaeaea] font-bold text-background text-xs sm:text-base " +
                         policy_rollout.color
                       }
                     >
@@ -669,12 +674,12 @@ export default function Home() {
 
                 {/* 1 */}
                 <TabsContent value="01" key="01" className="w-full">
-                  <Card className="xl:h-[750px] border-[#174BE5]/50 bg-[#eaeaea]/50 border-6 flex flex-col gap-0 justify-around">
+                  <Card className="border-[#174BE5]/50 bg-[#eaeaea]/50 border-6 flex flex-col gap-0 justify-around">
                     <p className="text-base text-[#174BE5] text-center mt-10 px-10">
                       The robot grasps a plastic cup and places it <b>stably</b>{" "}
                       on a tray without causing <b>damage</b>.
                     </p>
-                    <CardContent className="flex flex-col xl:flex-row gap-6 justify-between h-full items-center">
+                    <CardContent className="flex flex-col xl:flex-row gap-4 sm:gap-6 justify-between h-full items-center">
                       <div className="flex flex-col flex-3/5 gap-3">
                         <div className="flex flex-col gap-3">
                           <div className="flex flex-row w-full justify-around">
@@ -711,13 +716,13 @@ export default function Home() {
                 </TabsContent>
                 {/* 2 */}
                 <TabsContent value="02" key="02" className="w-full">
-                  <Card className="xl:h-[750px] border-[#43C9C1]/50 bg-[#eaeaea]/50 border-6 flex flex-col gap-0 justify-around">
+                  <Card className="border-[#43C9C1]/50 bg-[#eaeaea]/50 border-6 flex flex-col gap-0 justify-around">
                     <p className="text-base text-[#43C9C1] text-center mt-10 px-10">
                       The robot must grasp and identify one of two{" "}
                       <b>visually indistinguishable</b> cylindrical objects with
                       distinct textures and sort it into the correct bin.
                     </p>
-                    <CardContent className="flex flex-col xl:flex-row gap-6 justify-between h-full items-center">
+                    <CardContent className="flex flex-col xl:flex-row gap-4 sm:gap-6 justify-between h-full items-center">
                       <div className="flex-3/5 flex flex-row gap-3">
                         <div className="flex flex-col gap-3  w-3/4">
                           <video
@@ -756,12 +761,12 @@ export default function Home() {
                 </TabsContent>
                 {/* 3 */}
                 <TabsContent value="03" key="03" className="w-full">
-                  <Card className="xl:h-[750px] border-[#FFC53D]/50 bg-[#eaeaea]/50 border-6 flex flex-col gap-0 justify-around">
+                  <Card className="border-[#FFC53D]/50 bg-[#eaeaea]/50 border-6 flex flex-col gap-0 justify-around">
                     <p className="text-base text-[#FFC53D] text-center mt-10 px-10">
                       The robot presses a stamp onto paper to produce a{" "}
                       <b>clear</b> imprint.
                     </p>
-                    <CardContent className="flex flex-col xl:flex-row gap-6 justify-between h-full items-center">
+                    <CardContent className="flex flex-col xl:flex-row gap-4 sm:gap-6 justify-between h-full items-center">
                       <div className="flex flex-col flex-3/5 gap-3">
                         <div className="flex flex-col gap-3">
                           <div className="flex flex-row w-full justify-around">
@@ -798,12 +803,12 @@ export default function Home() {
                 </TabsContent>
                 {/* 4 */}
                 <TabsContent value="04" key="04" className="w-full">
-                  <Card className="xl:h-[750px] border-[#FF668C]/50 bg-[#eaeaea]/50 border-6 flex flex-col gap-0 justify-around">
+                  <Card className="border-[#FF668C]/50 bg-[#eaeaea]/50 border-6 flex flex-col gap-0 justify-around">
                     <p className="text-base text-[#FF668C] text-center mt-10 px-10">
                       The robot traces the <b>recognizable</b> digit "5"
                       following a guide labeled "202" with a calligraphy
                     </p>
-                    <CardContent className="flex flex-col xl:flex-row gap-6 justify-between h-full items-center">
+                    <CardContent className="flex flex-col xl:flex-row gap-4 sm:gap-6 justify-between h-full items-center">
                       <div className="flex-3/5 flex flex-row gap-3">
                         <div className="flex flex-col gap-3  w-3/4">
                           <video
@@ -842,12 +847,12 @@ export default function Home() {
                 </TabsContent>
                 {/* 5 */}
                 <TabsContent value="05" key="05" className="w-full">
-                  <Card className="xl:h-[750px] border-[#8E73E6]/50 bg-[#eaeaea]/50 border-6 flex flex-col gap-0 justify-around">
+                  <Card className="border-[#8E73E6]/50 bg-[#eaeaea]/50 border-6 flex flex-col gap-0 justify-around">
                     <p className="text-base text-[#8E73E6] text-center mt-10 px-10">
                       The robot needs to <b>securely</b> plug a pre-grasped USB
                       into a socket. brush.
                     </p>
-                    <CardContent className="flex flex-col xl:flex-row gap-6 justify-between h-full items-center">
+                    <CardContent className="flex flex-col xl:flex-row gap-4 sm:gap-6 justify-between h-full items-center">
                       <div className="flex flex-col flex-3/5 gap-3">
                         <div className="flex flex-col gap-3">
                           <div className="flex flex-row w-full justify-around">
@@ -886,13 +891,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full pl-6 pr-6 flex flex-col items-center">
+          <div className="w-full pl-2 pr-2 sm:pl-6 sm:pr-6 flex flex-col items-center">
             <Separator className="max-w-7xl mt-28" />
           </div>
 
           {/* User Study */}
           <div
-            className="w-full pl-6 pr-6 flex flex-col items-center"
+            className="w-full pl-2 pr-2 sm:pl-6 sm:pr-6 flex flex-col items-center"
             id="user-study"
           >
             <div className="w-full flex flex-col items-center mt-16">
@@ -926,7 +931,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
+            <div className="w-full pl-2 pr-2 sm:pl-6 sm:pr-6 flex flex-col items-center">
               <div className="w-full flex flex-col items-center mt-20">
                 <div className="w-full max-w-5xl flex flex-row justify-between">
                   <p className="text-base text-left w-full">
@@ -954,7 +959,7 @@ export default function Home() {
                 className="max-w-7xl w-full rounded-xl"
               />
             </div>
-            <div className="w-full max-w-[1400px] px-20 3xl:px-64 mt-10 p-6 overflow-hidden">
+            <div className="w-full max-w-[1400px] px-4 sm:px-20 3xl:px-64 mt-6 sm:mt-10 p-3 sm:p-6 overflow-hidden">
               <Carousel
                 opts={{
                   align: "start",
@@ -963,7 +968,13 @@ export default function Home() {
                 className="w-full"
               >
                 <CarouselContent>
-                  <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <CarouselItem
+                    className="md:basis-1/2 lg:basis-1/3 origin-center"
+                    style={{
+                      transform:
+                        "scale(clamp(0.1, calc(0.1 + (100vw - 320px) * 0.002), 1))",
+                    }}
+                  >
                     <Card className="border-[#174BE5]/50 bg-[#eaeaea]/50 border-0">
                       <CardContent className="flex flex-col aspect-square items-center justify-center p-6 gap-10">
                         <p className="text-xl font-bold text-[#174BE5]">
@@ -985,7 +996,13 @@ export default function Home() {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <CarouselItem
+                    className="md:basis-1/2 lg:basis-1/3 origin-center"
+                    style={{
+                      transform:
+                        "scale(clamp(0.1, calc(0.1 + (100vw - 320px) * 0.002), 1))",
+                    }}
+                  >
                     <Card className="border-[#43C9C1]/50 bg-[#eaeaea]/50 border-0">
                       <CardContent className="flex flex-col aspect-square items-center justify-center p-6 gap-10">
                         <p className="text-xl font-bold text-[#43C9C1]">
@@ -1007,7 +1024,13 @@ export default function Home() {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <CarouselItem
+                    className="md:basis-1/2 lg:basis-1/3 origin-center"
+                    style={{
+                      transform:
+                        "scale(clamp(0.1, calc(0.1 + (100vw - 320px) * 0.002), 1))",
+                    }}
+                  >
                     <Card className="border-[#FFC53D]/50 bg-[#eaeaea]/50 border-0">
                       <CardContent className="flex flex-col aspect-square items-center justify-center p-6 gap-10">
                         <p className="text-xl font-bold text-[#FFC53D]">
@@ -1029,7 +1052,13 @@ export default function Home() {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <CarouselItem
+                    className="md:basis-1/2 lg:basis-1/3 origin-center"
+                    style={{
+                      transform:
+                        "scale(clamp(0.1, calc(0.1 + (100vw - 320px) * 0.002), 1))",
+                    }}
+                  >
                     <Card className="border-[#FF668C]/50 bg-[#eaeaea]/50 border-0">
                       <CardContent className="flex flex-col aspect-square items-center justify-center p-6 gap-10">
                         <p className="text-xl font-bold text-[#FF668C]">
@@ -1051,7 +1080,13 @@ export default function Home() {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <CarouselItem
+                    className="md:basis-1/2 lg:basis-1/3 origin-center"
+                    style={{
+                      transform:
+                        "scale(clamp(0.1, calc(0.1 + (100vw - 320px) * 0.002), 1))",
+                    }}
+                  >
                     <Card className="border-[#8E73E6]/50 bg-[#eaeaea]/50 border-0">
                       <CardContent className="flex flex-col aspect-square items-center justify-center p-6 gap-10">
                         <p className="text-xl font-bold text-[#8E73E6]">
@@ -1073,7 +1108,13 @@ export default function Home() {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <CarouselItem
+                    className="md:basis-1/2 lg:basis-1/3 origin-center"
+                    style={{
+                      transform:
+                        "scale(clamp(0.1, calc(0.1 + (100vw - 320px) * 0.002), 1))",
+                    }}
+                  >
                     <Card className="border-[#d20000]/50 bg-[#eaeaea]/50 border-0">
                       <CardContent className="flex flex-col aspect-square items-center justify-center p-6 gap-10">
                         <p className="text-xl font-bold text-[#d20000]">
@@ -1095,7 +1136,13 @@ export default function Home() {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <CarouselItem
+                    className="md:basis-1/2 lg:basis-1/3 origin-center"
+                    style={{
+                      transform:
+                        "scale(clamp(0.1, calc(0.1 + (100vw - 320px) * 0.002), 1))",
+                    }}
+                  >
                     <Card className="border-[#7ed233]/50 bg-[#eaeaea]/50 border-0">
                       <CardContent className="flex flex-col aspect-square items-center justify-center p-6 gap-10">
                         <p className="text-xl font-bold text-[#7ed233]">
@@ -1117,7 +1164,13 @@ export default function Home() {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <CarouselItem
+                    className="md:basis-1/2 lg:basis-1/3 origin-center"
+                    style={{
+                      transform:
+                        "scale(clamp(0.1, calc(0.1 + (100vw - 320px) * 0.002), 1))",
+                    }}
+                  >
                     <Card className="border-[#ff7b00]/50 bg-[#eaeaea]/50 border-0">
                       <CardContent className="flex flex-col aspect-square items-center justify-center p-6 gap-10">
                         <p className="text-xl font-bold text-[#ff7b00]">
@@ -1150,14 +1203,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full pl-6 pr-6 flex flex-col items-center">
+          <div className="w-full pl-2 pr-2 sm:pl-6 sm:pr-6 flex flex-col items-center">
             <Separator className="max-w-7xl mt-48" />
           </div>
         </div>
       </div>
 
-      <footer className="w-full mb-32 flex flex-col gab-10">
-        <div className="w-full pl-6 pr-6 flex flex-row justify-center mt-32">
+      <footer className="w-full mb-16 sm:mb-32 flex flex-col gab-6 sm:gab-10">
+        <div className="w-full pl-4 pr-4 sm:pl-6 sm:pr-6 flex flex-row justify-center mt-16 sm:mt-32">
           <div className="max-w-7xl w-full flex flex-row justify-between">
             <div className="flex-1 flex flex-col justify-start">
               <span className="select-none">FreeTacMan © 2025</span>
