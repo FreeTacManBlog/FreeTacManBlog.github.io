@@ -6,7 +6,6 @@ export const metadata: Metadata = {
 };
 
 import Link from "next/link";
-import { MobileNav } from "./components/MobileNav";
 import {
   Card,
   CardContent,
@@ -162,7 +161,7 @@ export default function Home() {
       {/* Main Content Section with Table of Contents */}
       <div className="flex w-full">
         {/* Mobile Navigation */}
-        <MobileNav />
+        {/* <MobileNav /> */}
 
         {/* Main Content */}
         <div className="flex-1 w-full flex flex-col">
