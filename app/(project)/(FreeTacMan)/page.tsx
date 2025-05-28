@@ -114,7 +114,7 @@ export default function Home() {
               </div>
               <div className="mt-4 flex flex-row justify-center gap-4">
                 <a 
-                  href="https://www.overleaf.com/5237577172ppjpbgypzgwq#4865d4" 
+                  href="https://arxiv.com" 
                   className="px-4 py-2 bg-white text-[#174BE5] rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border border-gray-200"
                   target="_blank"
                   rel="noopener noreferrer"
