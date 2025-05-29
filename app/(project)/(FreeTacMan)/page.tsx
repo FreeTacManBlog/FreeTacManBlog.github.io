@@ -3,7 +3,8 @@ export const metadata: Metadata = {
   title: "FreeTacMan | OpenDriveLab",
   description: "FreeTacMan",
   keywords: ["FreeTacMan", "OpenDriveLab", "HKU", "SII"],
-  viewport: "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+  viewport:
+    "width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes",
 };
 
 import Link from "next/link";
@@ -48,7 +49,7 @@ const policy_rollouts: { id: string; title: string; color: string }[] = [
   {
     id: "01",
     title: "Fragile Cup",
-    color: "data-[state=active]:bg-[#174BE5]", 
+    color: "data-[state=active]:bg-[#174BE5]",
   },
   {
     id: "02",
@@ -370,7 +371,7 @@ export default function Home() {
                 </h2>
               </div>
             </div>
-            <div className="my-5 md:my-10 flex flex-col items-center px-2 md:px-6 inset-0 w-full">
+            <div className="my-5 flex flex-col items-center px-2 md:px-6 inset-0 w-full">
               <div className="w-full max-w-7xl my-3 md:my-5">
                 <div className="flex flex-col gap-3 md:gap-5 h-full">
                   <div className="flex flex-col justify-center gap-3 md:gap-5">
@@ -432,7 +433,7 @@ export default function Home() {
           </div>
 
           <div className="w-full px-4 md:px-6 flex flex-col items-center">
-            <Separator className="max-w-7xl mt-14 md:mt-28" />
+            <Separator className="max-w-7xl  " />
           </div>
 
           {/* Application  */}
@@ -699,7 +700,7 @@ export default function Home() {
                             playsInline
                             className="border-2 md:border-6 border-[#174BE5]/50 rounded-xl object-fit"
                           >
-                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/FragileCupManipulation.mov" />
+                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/FragileCupManipulation.mp4" />
                           </video>
                         </div>
                         <p className="text-xs sm:text-sm md:text-base text-center italic text-muted-foreground">
@@ -788,7 +789,7 @@ export default function Home() {
                             playsInline
                             className="border-2 md:border-6 border-[#FFC53D]/50 rounded-xl object-fit"
                           >
-                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/StampPressing.mov" />
+                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/StampPressing.mp4" />
                           </video>
                         </div>
                         <p className="text-xs sm:text-sm md:text-base text-center italic text-muted-foreground">
@@ -811,7 +812,7 @@ export default function Home() {
                     </p>
                     <CardContent className="flex flex-col xl:flex-row gap-3 md:gap-6 justify-between h-full items-center p-2 md:p-6">
                       <div className="flex-3/5 flex flex-col md:flex-row gap-3 w-full xl:w-auto">
-                        <div className="vidoe-inner" >
+                        <div className="vidoe-inner">
                           <video
                             preload="none"
                             autoPlay
@@ -876,7 +877,7 @@ export default function Home() {
                             playsInline
                             className="border-2 md:border-6 border-[#8E73E6]/50 rounded-xl object-fit"
                           >
-                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/USBPlugging.mov" />
+                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/USBPlugging.mp4" />
                           </video>
                         </div>
                         <p className="text-xs sm:text-sm md:text-base text-center italic text-muted-foreground">
@@ -966,13 +967,22 @@ export default function Home() {
                 opts={{
                   align: "start",
                   loop: true,
+                  containScroll: "trimSnaps",
+                  dragFree: true,
+                  breakpoints: {
+                    "(max-width: 640px)": { slidesToScroll: 1 },
+                    "(min-width: 641px) and (max-width: 768px)": {
+                      slidesToScroll: 1,
+                    },
+                    "(min-width: 769px)": { slidesToScroll: 2 },
+                  },
                 }}
                 className="w-full"
               >
-                <CarouselContent>
-                  <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
-                    <Card className="border-[#174BE5]/50 bg-[#eaeaea]/50 border-0">
-                      <CardContent className="flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-4 md:gap-10">
+                <CarouselContent className="-ml-2 md:-ml-4">
+                  <CarouselItem className="carouselItem basis-full   md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
+                    <Card className="border-[#174BE5]/50 bg-[#eaeaea]/50 border-0 card">
+                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-2 md:gap-4 lg:gap-10">
                         <p className="text-base md:text-xl font-bold text-[#174BE5]">
                           Fragile Cup
                         </p>
@@ -992,9 +1002,9 @@ export default function Home() {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
-                    <Card className="border-[#43C9C1]/50 bg-[#eaeaea]/50 border-0">
-                      <CardContent className="flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-4 md:gap-10">
+                  <CarouselItem className="carouselItem basis-full   md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
+                    <Card className="card border-[#43C9C1]/50 bg-[#eaeaea]/50 border-0">
+                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-2 md:gap-4 lg:gap-10">
                         <p className="text-base md:text-xl font-bold text-[#43C9C1]">
                           USB Plugging
                         </p>
@@ -1014,9 +1024,9 @@ export default function Home() {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
-                    <Card className="border-[#FFC53D]/50 bg-[#eaeaea]/50 border-0">
-                      <CardContent className="flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-4 md:gap-10">
+                  <CarouselItem className="carouselItem basis-full   md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
+                    <Card className=" card border-[#FFC53D]/50 bg-[#eaeaea]/50 border-0">
+                      <CardContent className=" cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-2 md:gap-4 lg:gap-10">
                         <p className="text-base md:text-xl font-bold text-[#FFC53D]">
                           Texture Classification
                         </p>
@@ -1036,9 +1046,9 @@ export default function Home() {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
-                    <Card className="border-[#FF668C]/50 bg-[#eaeaea]/50 border-0">
-                      <CardContent className="flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-4 md:gap-10">
+                  <CarouselItem className="carouselItem basis-full   md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
+                    <Card className="card border-[#FF668C]/50 bg-[#eaeaea]/50 border-0">
+                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-2 md:gap-4 lg:gap-10">
                         <p className="text-base md:text-xl font-bold text-[#FF668C]">
                           Stamp Pressing
                         </p>
@@ -1058,9 +1068,9 @@ export default function Home() {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
-                    <Card className="border-[#8E73E6]/50 bg-[#eaeaea]/50 border-0">
-                      <CardContent className="flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-4 md:gap-10">
+                  <CarouselItem className="carouselItem basis-full   md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
+                    <Card className=" card border-[#8E73E6]/50 bg-[#eaeaea]/50 border-0">
+                      <CardContent className=" cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-2 md:gap-4 lg:gap-10">
                         <p className="text-base md:text-xl font-bold text-[#8E73E6]">
                           Calligraphy
                         </p>
@@ -1080,9 +1090,9 @@ export default function Home() {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
-                    <Card className="border-[#d20000]/50 bg-[#eaeaea]/50 border-0">
-                      <CardContent className="flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-4 md:gap-10">
+                  <CarouselItem className="carouselItem basis-full   md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
+                    <Card className="card border-[#d20000]/50 bg-[#eaeaea]/50 border-0">
+                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-2 md:gap-4 lg:gap-10">
                         <p className="text-base md:text-xl font-bold text-[#d20000]">
                           Toothpaste Extrusion
                         </p>
@@ -1102,9 +1112,9 @@ export default function Home() {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
-                    <Card className="border-[#7ed233]/50 bg-[#eaeaea]/50 border-0">
-                      <CardContent className="flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-4 md:gap-10">
+                  <CarouselItem className="carouselItem basis-full   md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
+                    <Card className="card border-[#7ed233]/50 bg-[#eaeaea]/50 border-0">
+                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-2 md:gap-4 lg:gap-10">
                         <p className="text-base md:text-xl font-bold text-[#7ed233]">
                           Tissue Grasping
                         </p>
@@ -1124,9 +1134,9 @@ export default function Home() {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="basis-full md:basis-1/2 lg:basis-1/3">
-                    <Card className="border-[#ff7b00]/50 bg-[#eaeaea]/50 border-0">
-                      <CardContent className="flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-4 md:gap-10">
+                  <CarouselItem className="carouselItem basis-full   md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
+                    <Card className="card border-[#ff7b00]/50 bg-[#eaeaea]/50 border-0">
+                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-2 md:gap-4 lg:gap-10">
                         <p className="text-base md:text-xl font-bold text-[#ff7b00]">
                           Chip Grasping
                         </p>
@@ -1167,7 +1177,7 @@ export default function Home() {
         <div className="w-full px-4 md:px-6 flex flex-row justify-center mt-16 md:mt-32">
           <div className="max-w-7xl w-full flex flex-row justify-between">
             <div className="flex-1 flex flex-col justify-start">
-              <span className="text-xs sm:text-sm md:text-base select-none">
+              <span className="text-xs sm:text-sm md:text-base select-none text-center">
                 FreeTacMan © 2025
               </span>
             </div>
