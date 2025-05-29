@@ -288,7 +288,7 @@ export default function Home() {
                     <TabsTrigger
                       value="03"
                       key="03"
-                      className="data-[state=active]:text-[#174BE5] disabled:pointer-events-none flex flex-col py-2 md:py-6 px-1 md:px-3 justify-around rounded-xl text-background font-bold bg-[url('https://opendrivelab.github.io/FreeTacMan/highlights/03.png')] bg-center bg-cover bg-black bg-opacity-50 bg-blend-overlay w-full md:h-1/3"
+                      className="data-[state=active]:text-[#174BE5] disabled:pointer-events-none flex flex-col py-2 md:py-6 px-1 md:px-3 justify-around rounded-xl text-background font-bold bg-[url('https://opendrivelab.github.io/FreeTacMan/highlights/02.png')] bg-center bg-cover bg-black bg-opacity-50 bg-blend-overlay w-full md:h-1/3"
                     >
                       <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                         03
@@ -440,17 +440,15 @@ export default function Home() {
           </div>
 
           <div className="w-full px-4 md:px-6 flex flex-col items-center">
-            <Separator className="max-w-7xl mt-40" />
+            <Separator className="max-w-7xl mt-10 md:mt-24" />
           </div>
 
           {/* Application  */}
           <div
-            className="w-full px-4 md:px-6 flex flex-col items-center mt-0 "
+            className="w-full px-4 md:px-6 flex flex-col items-center"
             id="applications"
           >
-
-       
-            <div className="w-full flex flex-col items-center mt-8 md:mt-16">
+            <div className="w-full flex flex-col items-center mt-8 md:mt-10">
               <div className="w-full max-w-7xl flex flex-row justify-between">
                 <h2 className="text-2xl md:text-3xl font-bold">
                   <Link
@@ -709,7 +707,7 @@ export default function Home() {
                             playsInline
                             className="border-2 md:border-6 border-[#174BE5]/50 rounded-xl object-fit"
                           >
-                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/FragileCupManipulation.mp4" />
+                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/FragileCupManipulation.mov" />
                           </video>
                         </div>
                         <p className="text-xs sm:text-sm md:text-base text-center italic text-muted-foreground">
@@ -798,7 +796,7 @@ export default function Home() {
                             playsInline
                             className="border-2 md:border-6 border-[#FFC53D]/50 rounded-xl object-fit"
                           >
-                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/StampPressing.mp4" />
+                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/StampPressing.mov" />
                           </video>
                         </div>
                         <p className="text-xs sm:text-sm md:text-base text-center italic text-muted-foreground">
@@ -886,7 +884,7 @@ export default function Home() {
                             playsInline
                             className="border-2 md:border-6 border-[#8E73E6]/50 rounded-xl object-fit"
                           >
-                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/USBPlugging.mp4" />
+                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/USBPlugging.mov" />
                           </video>
                         </div>
                         <p className="text-xs sm:text-sm md:text-base text-center italic text-muted-foreground">
@@ -1196,4 +1194,3 @@ export default function Home() {
     </main>
   );
 }
-
