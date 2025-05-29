@@ -688,17 +688,6 @@ export default function Home() {
                     <CardContent className="flex flex-col xl:flex-row gap-3 md:gap-6 justify-between h-full items-center p-2 md:p-6">
                       <div className="flex flex-col flex-3/5 gap-2 md:gap-3 w-full xl:w-auto">
                         <div className="flex flex-col gap-2 md:gap-3">
-                          {/* <div className="flex flex-row w-full justify-around">
-                            <p className="text-[#174BE5] text-xs sm:text-sm md:text-base text-center flex-1">
-                              ACT<br></br>(Vision-only)
-                            </p>
-                            <p className="text-[#174BE5] text-xs sm:text-sm md:text-base text-center flex-1">
-                              Ours<br></br>(+ Tactile)
-                            </p>
-                            <p className="text-[#174BE5] text-xs sm:text-sm md:text-base text-center flex-1">
-                              Ours<br></br>(+ Tactile Pretrained)
-                            </p>
-                          </div> */}
                           <video
                             preload="none"
                             autoPlay
@@ -746,19 +735,6 @@ export default function Home() {
                             The videos are played at normal speed.
                           </p>
                         </div>
-
-                        {/* <div className="flex flex-row md:flex-col flex-1/3 justify-around">
-                          <p className="text-[#43C9C1] text-xs sm:text-sm md:text-base text-center flex-1 md:flex-auto">
-                            ACT<br></br>(Vision-only)
-                          </p>
-
-                          <p className="text-[#43C9C1] text-xs sm:text-sm md:text-base text-center flex-1 md:flex-auto">
-                            Ours<br></br>(+ Tactile)
-                          </p>
-                          <p className="text-[#43C9C1] text-xs sm:text-sm md:text-base text-center flex-1 md:flex-auto">
-                            Ours<br></br>(+ Tactile Pretrained)
-                          </p>
-                        </div> */}
                       </div>
                       <div className="flex-2/5 w-full">
                         <PolicyRollouts2 />
@@ -777,17 +753,6 @@ export default function Home() {
                     <CardContent className="flex flex-col xl:flex-row gap-3 md:gap-6 justify-between h-full items-center p-2 md:p-6">
                       <div className="flex flex-col flex-3/5 gap-2 md:gap-3 w-full xl:w-auto">
                         <div className="flex flex-col gap-2 md:gap-3">
-                          {/* <div className="flex flex-row w-full justify-around">
-                            <p className="text-[#FFC53D] text-xs sm:text-sm md:text-base text-center flex-1">
-                              ACT<br></br>(Vision-only)
-                            </p>
-                            <p className="text-[#FFC53D] text-xs sm:text-sm md:text-base text-center flex-1">
-                              Ours<br></br>(+ Tactile)
-                            </p>
-                            <p className="text-[#FFC53D] text-xs sm:text-sm md:text-base text-center flex-1">
-                              Ours<br></br>(+ Tactile Pretrained)
-                            </p>
-                          </div> */}
                           <video
                             preload="none"
                             autoPlay
@@ -834,19 +799,6 @@ export default function Home() {
                             The videos are played at normal speed.
                           </p>
                         </div>
-
-                        {/* <div className="flex flex-row md:flex-col flex-1/3 justify-around">
-                          <p className="text-[#FF668C] text-xs sm:text-sm md:text-base text-center flex-1 md:flex-auto">
-                            ACT<br></br>(Vision-only)
-                          </p>
-
-                          <p className="text-[#FF668C] text-xs sm:text-sm md:text-base text-center flex-1 md:flex-auto">
-                            Ours<br></br>(+ Tactile)
-                          </p>
-                          <p className="text-[#FF668C] text-xs sm:text-sm md:text-base text-center flex-1 md:flex-auto">
-                            Ours<br></br>(+ Tactile Pretrained)
-                          </p>
-                        </div> */}
                       </div>
                       <div className="flex-2/5 w-full">
                         <PolicyRollouts4 />
@@ -865,17 +817,6 @@ export default function Home() {
                     <CardContent className="flex flex-col xl:flex-row gap-3 md:gap-6 justify-between h-full items-center p-2 md:p-6">
                       <div className="flex flex-col flex-3/5 gap-2 md:gap-3 w-full xl:w-auto">
                         <div className="flex flex-col gap-2 md:gap-3">
-                          {/* <div className="flex flex-row w-full justify-around">
-                            <p className="text-[#8E73E6] text-xs sm:text-sm md:text-base text-center flex-1">
-                              ACT<br></br>(Vision-only)
-                            </p>
-                            <p className="text-[#8E73E6] text-xs sm:text-sm md:text-base text-center flex-1">
-                              Ours<br></br>(+ Tactile)
-                            </p>
-                            <p className="text-[#8E73E6] text-xs sm:text-sm md:text-base text-center flex-1">
-                              Ours<br></br>(+ Tactile Pretrained)
-                            </p>
-                          </div> */}
                           <video
                             preload="none"
                             autoPlay
@@ -987,12 +928,9 @@ export default function Home() {
                 className="w-full"
               >
                 <CarouselContent className="-ml-2 md:-ml-4">
-                  <CarouselItem className="carouselItem basis-full   md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
+                  <CarouselItem className="carouselItem basis-full md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
                     <Card className="border-[#174BE5]/50 bg-[#eaeaea]/50 border-0 card">
-                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-2 md:gap-4 lg:gap-10">
-                        <p className="text-base md:text-xl font-bold text-[#174BE5]">
-                          Fragile Cup
-                        </p>
+                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-1 md:gap-1">
                         <video
                           preload="none"
                           autoPlay
@@ -1003,18 +941,20 @@ export default function Home() {
                         >
                           <source src="https://opendrivelab.github.io/FreeTacMan/user_study/FragileCupManipulation.mp4" />
                         </video>
+                        <div className="w-full text-center bg-white p-1 rounded-lg shadow-md">
+                          <p className="text-base md:text-xl font-bold text-[#174BE5] whitespace-nowrap">
+                            Fragile Cup
+                          </p>
+                        </div>
                         <div className="w-full">
                           <UserStudy1 />
                         </div>
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="carouselItem basis-full   md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
+                  <CarouselItem className="carouselItem basis-full md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
                     <Card className="card border-[#43C9C1]/50 bg-[#eaeaea]/50 border-0">
-                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-2 md:gap-4 lg:gap-10">
-                        <p className="text-base md:text-xl font-bold text-[#43C9C1]">
-                          USB Plugging
-                        </p>
+                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-1 md:gap-1">
                         <video
                           preload="none"
                           autoPlay
@@ -1025,18 +965,20 @@ export default function Home() {
                         >
                           <source src="https://opendrivelab.github.io/FreeTacMan/user_study/USBPlugging.mp4" />
                         </video>
+                        <div className="w-full text-center bg-white p-1 rounded-lg shadow-md">
+                          <p className="text-base md:text-xl font-bold text-[#43C9C1] whitespace-nowrap">
+                            USB Plugging
+                          </p>
+                        </div>
                         <div className="w-full">
                           <UserStudy2 />
                         </div>
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="carouselItem basis-full   md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
-                    <Card className=" card border-[#FFC53D]/50 bg-[#eaeaea]/50 border-0">
-                      <CardContent className=" cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-2 md:gap-4 lg:gap-10">
-                        <p className="text-base md:text-xl font-bold text-[#FFC53D]">
-                          Texture Classification
-                        </p>
+                  <CarouselItem className="carouselItem basis-full md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
+                    <Card className="card border-[#FFC53D]/50 bg-[#eaeaea]/50 border-0">
+                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-1 md:gap-1">
                         <video
                           preload="none"
                           autoPlay
@@ -1047,18 +989,20 @@ export default function Home() {
                         >
                           <source src="https://opendrivelab.github.io/FreeTacMan/user_study/TextureClassification.mov" />
                         </video>
+                        <div className="w-full text-center bg-white p-1 rounded-lg shadow-md">
+                          <p className="text-base md:text-xl font-bold text-[#FFC53D] whitespace-nowrap">
+                            Texture Classification
+                          </p>
+                        </div>
                         <div className="w-full">
                           <UserStudy3 />
                         </div>
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="carouselItem basis-full   md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
+                  <CarouselItem className="carouselItem basis-full md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
                     <Card className="card border-[#FF668C]/50 bg-[#eaeaea]/50 border-0">
-                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-2 md:gap-4 lg:gap-10">
-                        <p className="text-base md:text-xl font-bold text-[#FF668C]">
-                          Stamp Pressing
-                        </p>
+                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-1 md:gap-1">
                         <video
                           preload="none"
                           autoPlay
@@ -1069,18 +1013,20 @@ export default function Home() {
                         >
                           <source src="https://opendrivelab.github.io/FreeTacMan/user_study/StampPressing.mp4" />
                         </video>
+                        <div className="w-full text-center bg-white p-1 rounded-lg shadow-md">
+                          <p className="text-base md:text-xl font-bold text-[#FF668C] whitespace-nowrap">
+                            Stamp Pressing
+                          </p>
+                        </div>
                         <div className="w-full">
                           <UserStudy4 />
                         </div>
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="carouselItem basis-full   md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
-                    <Card className=" card border-[#8E73E6]/50 bg-[#eaeaea]/50 border-0">
-                      <CardContent className=" cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-2 md:gap-4 lg:gap-10">
-                        <p className="text-base md:text-xl font-bold text-[#8E73E6]">
-                          Calligraphy
-                        </p>
+                  <CarouselItem className="carouselItem basis-full md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
+                    <Card className="card border-[#8E73E6]/50 bg-[#eaeaea]/50 border-0">
+                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-1 md:gap-1">
                         <video
                           preload="none"
                           autoPlay
@@ -1091,18 +1037,20 @@ export default function Home() {
                         >
                           <source src="https://opendrivelab.github.io/FreeTacMan/user_study/CalligraphyWriting.mov" />
                         </video>
+                        <div className="w-full text-center bg-white p-1 rounded-lg shadow-md">
+                          <p className="text-base md:text-xl font-bold text-[#8E73E6] whitespace-nowrap">
+                            Calligraphy
+                          </p>
+                        </div>
                         <div className="w-full">
                           <UserStudy5 />
                         </div>
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="carouselItem basis-full   md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
+                  <CarouselItem className="carouselItem basis-full md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
                     <Card className="card border-[#d20000]/50 bg-[#eaeaea]/50 border-0">
-                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-2 md:gap-4 lg:gap-10">
-                        <p className="text-base md:text-xl font-bold text-[#d20000]">
-                          Toothpaste Extrusion
-                        </p>
+                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-1 md:gap-1">
                         <video
                           preload="none"
                           autoPlay
@@ -1113,18 +1061,20 @@ export default function Home() {
                         >
                           <source src="https://opendrivelab.github.io/FreeTacMan/user_study/ToothpasteExtrusion.mp4" />
                         </video>
+                        <div className="w-full text-center bg-white p-1 rounded-lg shadow-md">
+                          <p className="text-base md:text-xl font-bold text-[#d20000] whitespace-nowrap">
+                            Toothpaste Extrusion
+                          </p>
+                        </div>
                         <div className="w-full">
                           <UserStudy6 />
                         </div>
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="carouselItem basis-full   md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
+                  <CarouselItem className="carouselItem basis-full md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
                     <Card className="card border-[#7ed233]/50 bg-[#eaeaea]/50 border-0">
-                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-2 md:gap-4 lg:gap-10">
-                        <p className="text-base md:text-xl font-bold text-[#7ed233]">
-                          Tissue Grasping
-                        </p>
+                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-1 md:gap-1">
                         <video
                           preload="none"
                           autoPlay
@@ -1135,18 +1085,20 @@ export default function Home() {
                         >
                           <source src="https://opendrivelab.github.io/FreeTacMan/user_study/TissueGrasping.mp4" />
                         </video>
+                        <div className="w-full text-center bg-white p-1 rounded-lg shadow-md">
+                          <p className="text-base md:text-xl font-bold text-[#7ed233] whitespace-nowrap">
+                            Tissue Grasping
+                          </p>
+                        </div>
                         <div className="w-full">
                           <UserStudy7 />
                         </div>
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="carouselItem basis-full   md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
+                  <CarouselItem className="carouselItem basis-full md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
                     <Card className="card border-[#ff7b00]/50 bg-[#eaeaea]/50 border-0">
-                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-2 md:gap-4 lg:gap-10">
-                        <p className="text-base md:text-xl font-bold text-[#ff7b00]">
-                          Chip Grasping
-                        </p>
+                      <CardContent className="cardContent flex flex-col aspect-square items-center justify-center p-2 md:p-6 gap-1 md:gap-1">
                         <video
                           preload="none"
                           autoPlay
@@ -1157,6 +1109,11 @@ export default function Home() {
                         >
                           <source src="https://opendrivelab.github.io/FreeTacMan/user_study/PotatoChipGrasping.mp4" />
                         </video>
+                        <div className="w-full text-center bg-white p-1 rounded-lg shadow-md">
+                          <p className="text-base md:text-xl font-bold text-[#ff7b00] whitespace-nowrap">
+                            Chip Grasping
+                          </p>
+                        </div>
                         <div className="w-full">
                           <UserStudy8 />
                         </div>
