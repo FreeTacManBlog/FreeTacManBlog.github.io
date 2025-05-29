@@ -405,7 +405,14 @@ export default function Home() {
                           FreeTacMan on FRANKA
                         </span>
                       </div>
-                      <video preload="none" autoPlay loop muted playsInline>
+                      <video
+                        preload="none"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        style={{ width: "100%", height: "100%" }}
+                      >
                         <source src="https://opendrivelab.github.io/FreeTacMan/3d_model/piperandfranka.mp4" />
                       </video>
                       <div className="w-full flex justify-center">
@@ -433,20 +440,22 @@ export default function Home() {
           </div>
 
           <div className="w-full px-4 md:px-6 flex flex-col items-center">
-            <Separator className="max-w-7xl  " />
+            <Separator className="max-w-7xl mt-40" />
           </div>
 
           {/* Application  */}
           <div
-            className="w-full px-4 md:px-6 flex flex-col items-center"
+            className="w-full px-4 md:px-6 flex flex-col items-center mt-0 "
             id="applications"
           >
+
+       
             <div className="w-full flex flex-col items-center mt-8 md:mt-16">
               <div className="w-full max-w-7xl flex flex-row justify-between">
                 <h2 className="text-2xl md:text-3xl font-bold">
                   <Link
                     href="#applications"
-                    className="scroll-mt-32 group flex items-center"
+                    className="scroll-mt-32 group flex items-center "
                   >
                     Applications
                     <span className="ml-2 md:ml-6 hidden group-hover:inline-block size-6 md:size-10 text-foreground">
@@ -472,9 +481,9 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full px-4 md:px-6 flex flex-col items-center">
-              <div className="w-full flex flex-col items-center mt-10 md:mt-20">
+              <div className="w-full flex flex-col items-center mt-10 ">
                 <div className="w-full max-w-5xl flex flex-row justify-between">
-                  <p className="text-xs sm:text-sm md:text-base text-left w-full">
+                  <p className="text-xs sm:text-sm md:text-base text-left w-full ">
                     We evaluate the effectiveness of FreeTacMan system and the
                     quality of the collected visuo-tactile demonstration through
                     a diverse set of contact-rich manipulation tasks.
@@ -700,7 +709,7 @@ export default function Home() {
                             playsInline
                             className="border-2 md:border-6 border-[#174BE5]/50 rounded-xl object-fit"
                           >
-                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/FragileCupManipulation.mp4" />
+                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/FragileCupManipulation.mov" />
                           </video>
                         </div>
                         <p className="text-xs sm:text-sm md:text-base text-center italic text-muted-foreground">
@@ -789,7 +798,7 @@ export default function Home() {
                             playsInline
                             className="border-2 md:border-6 border-[#FFC53D]/50 rounded-xl object-fit"
                           >
-                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/StampPressing.mp4" />
+                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/StampPressing.mov" />
                           </video>
                         </div>
                         <p className="text-xs sm:text-sm md:text-base text-center italic text-muted-foreground">
@@ -877,7 +886,7 @@ export default function Home() {
                             playsInline
                             className="border-2 md:border-6 border-[#8E73E6]/50 rounded-xl object-fit"
                           >
-                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/USBPlugging.mp4" />
+                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/USBPlugging.mov" />
                           </video>
                         </div>
                         <p className="text-xs sm:text-sm md:text-base text-center italic text-muted-foreground">
@@ -1187,3 +1196,4 @@ export default function Home() {
     </main>
   );
 }
+
