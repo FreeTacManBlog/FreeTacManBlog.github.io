@@ -707,7 +707,7 @@ export default function Home() {
                             playsInline
                             className="border-2 md:border-6 border-[#174BE5]/50 rounded-xl object-fit"
                           >
-                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/FragileCupManipulation.mov" />
+                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/FragileCupManipulation.mp4" />
                           </video>
                         </div>
                         <p className="text-xs sm:text-sm md:text-base text-center italic text-muted-foreground">
@@ -796,7 +796,7 @@ export default function Home() {
                             playsInline
                             className="border-2 md:border-6 border-[#FFC53D]/50 rounded-xl object-fit"
                           >
-                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/StampPressing.mov" />
+                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/StampPressing.mp4" />
                           </video>
                         </div>
                         <p className="text-xs sm:text-sm md:text-base text-center italic text-muted-foreground">
@@ -884,7 +884,7 @@ export default function Home() {
                             playsInline
                             className="border-2 md:border-6 border-[#8E73E6]/50 rounded-xl object-fit"
                           >
-                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/USBPlugging.mov" />
+                            <source src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/USBPlugging.mp4" />
                           </video>
                         </div>
                         <p className="text-xs sm:text-sm md:text-base text-center italic text-muted-foreground">
