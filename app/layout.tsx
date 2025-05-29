@@ -67,10 +67,10 @@ export default function RootLayout({
 
 
 
-                        <div className="fixed flex flex-row gap-3 m-6 z-20 flex-wrap">
+                        <div className="fixed flex flex-row gap-3 mt-6 px-6 md:p-0 md:m-6 z-20 flex-wrap w-full justify-between md:justify-start md:w-auto">
 
                             <Button asChild className="bg-background text-foreground hover:bg-white group">
-                                <Link href="/" className="select-none">
+                                <Link href="https://opendrivelab.com" className="select-none">
                                     <Image
                                         src="/logo/OpenDriveLab/D.png"
                                         alt="OpenDriveLab"
