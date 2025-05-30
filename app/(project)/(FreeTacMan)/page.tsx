@@ -780,7 +780,7 @@ export default function Home() {
                   <Card className="h-auto xl:h-[750px] border-[#FF668C]/50 bg-[#eaeaea]/50 border-4 md:border-6 flex flex-col gap-0 justify-around">
                     <p className="text-xs sm:text-sm md:text-base text-[#FF668C] text-center mt-5 md:mt-10 px-4 md:px-10">
                       The robot traces the <b>recognizable</b> digit "5"
-                      following a guide labeled "202" with a calligraphy
+                      following a guide labeled "202" with a calligraphy brush.
                     </p>
                     <CardContent className="flex flex-col xl:flex-row gap-3 md:gap-6 justify-between h-full items-center p-2 md:p-6">
                       <div className="flex-3/5 flex flex-col md:flex-row gap-3 w-full xl:w-auto">
@@ -812,7 +812,7 @@ export default function Home() {
                   <Card className="h-auto xl:h-[750px] border-[#8E73E6]/50 bg-[#eaeaea]/50 border-4 md:border-6 flex flex-col gap-0 justify-around">
                     <p className="text-xs sm:text-sm md:text-base text-[#8E73E6] text-center mt-5 md:mt-10 px-4 md:px-10">
                       The robot needs to <b>securely</b> plug a pre-grasped USB
-                      into a socket. brush.
+                      into a socket.
                     </p>
                     <CardContent className="flex flex-col xl:flex-row gap-3 md:gap-6 justify-between h-full items-center p-2 md:p-6">
                       <div className="flex flex-col flex-3/5 gap-2 md:gap-3 w-full xl:w-auto">
