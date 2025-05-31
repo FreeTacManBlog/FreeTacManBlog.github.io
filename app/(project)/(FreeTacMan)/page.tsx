@@ -108,14 +108,27 @@ export default function Home() {
                 <span>Hongyang Li</span>
                 <sup>2,1</sup>
               </div>
-              <div className="mb-2">
-                <sup>1</sup>Shanghai Innovation Institute &nbsp;
-                <sup>2</sup>The University of Hong Kong
-              </div>
-              <div className="mb-2">
-                <sup>3</sup>Shanghai Jiao Tong University &nbsp;
-                <sup>4</sup>Fudan University &nbsp;
-                <sup>5</sup>Nanjing University
+              <div className="mb-2 flex justify-around items-center gap-1 px-24 md:px-18 lg:px-40">
+                <div className="flex items-center">
+                  <sup className="mr-1">1</sup>
+                  <img src="https://opendrivelab.github.io/FreeTacMan/logo/SII.png" alt="SII" className="h-8 md:h-12 object-contain" />
+                </div>
+                <div className="flex items-center">
+                  <sup className="mr-1">2</sup>
+                  <img src="https://opendrivelab.github.io/FreeTacMan/logo/HKU.png" alt="HKU" className="h-8 md:h-12 object-contain" />
+                </div>
+                <div className="flex items-center">
+                  <sup className="mr-1">3</sup>
+                  <img src="https://opendrivelab.github.io/FreeTacMan/logo/SJTU.png" alt="SJTU" className="h-8 md:h-12 object-contain" />
+                </div>
+                <div className="flex items-center">
+                  <sup className="mr-1">4</sup>
+                  <img src="https://opendrivelab.github.io/FreeTacMan/logo/FDU.png" alt="Fudan" className="h-8 md:h-12 object-contain" />
+                </div>
+                <div className="flex items-center">
+                  <sup className="mr-1">5</sup>
+                  <img src="https://opendrivelab.github.io/FreeTacMan/logo/NJU.png" alt="NJU" className="h-8 md:h-12 object-contain" />
+                </div>
               </div>
               <div className="mb-2">
                 <span className="text-red-600 font-semibold">arXiv 2025</span>
@@ -136,6 +149,22 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   Code
+                </a>
+                <a
+                  href="https://docs.google.com/document/d/1Hhi2stn_goXUHdYi7461w10AJbzQDC0fdYaSxMdMVXM/edit?tab=t.0#heading=h.86eh2dqlip77"
+                  className="px-3 py-1 md:px-4 md:py-2 bg-white text-[#174BE5] rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border border-gray-200 text-xs sm:text-sm md:text-base"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Hardware Guide
+                </a>
+                <a
+                  href="https://arxiv.com"
+                  className="px-3 py-1 md:px-4 md:py-2 bg-white text-[#174BE5] rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border border-gray-200 text-xs sm:text-sm md:text-base"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
                 </a>
               </div>
             </div>

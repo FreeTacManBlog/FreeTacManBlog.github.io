@@ -1,7 +1,5 @@
 "use client"
 
-
-
 import {
     Sidebar,
     SidebarContent,
@@ -25,11 +23,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import Image from 'next/image'
 
-
-
 import { FadeIn } from "@/components/animation/fade-in"
-
-
 
 function PageSidebar() {
     const { content } = useSidebar()
@@ -37,14 +31,13 @@ function PageSidebar() {
         return (
                 <SidebarMenu className="mb-12 px-8 text-xs overflow-y-scroll no-scrollbar">
                     <span className="font-bold p-2 select-none text-foreground/50">
-                        This Page
+                        FreeTacMan
                     </span>
                     {content.map((item) => (
                         <Link key={item.text} href={"#" + item.id}  className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
                             {item.text}
                         </Link>
                     ))}
-
                 </SidebarMenu>
         )
     } else {
@@ -53,11 +46,11 @@ function PageSidebar() {
 }
 
 export function AppSidebar() {
-
     return (
         <FadeIn>
             <Sidebar>
-                <div className="fixed flex flex-row gap-3 m-6 z-20 flex-wrap">
+                {/* OpenDriveLab Logo Button */}
+                {/* <div className="fixed flex flex-row gap-3 m-6 z-20 flex-wrap">
                     <Button asChild className="bg-background text-foreground hover:bg-white group">
                         <Link href="/" className="select-none">
                             <Image
@@ -65,26 +58,20 @@ export function AppSidebar() {
                                 alt="OpenDriveLab"
                                 width={24}
                                 height={24}
-                            className="group-hover:scale-125 transition delay-100 duration-200"
+                                className="group-hover:scale-125 transition delay-100 duration-200"
                             />
                         </Link>
                     </Button>
-                </div>
+                </div> */}
 
-
-                <div className="mt-24  overflow-y-scroll no-scrollbar">
-                
-                    <SidebarMenu className="mb-12 px-8 text-xs overflow-y-scroll no-scrollbar">
-
-
-
+                <div className="mt-24 overflow-y-scroll no-scrollbar">
+                    {/* OpenDriveLab Menu */}
+                    {/* <SidebarMenu className="mb-12 px-8 text-xs overflow-y-scroll no-scrollbar">
                         <span className="font-bold p-2 select-none text-foreground/50">
                             OpenDriveLab
                         </span>
 
-
-
-                        <Collapsible  className="group/collapsible flex flex-col gap-6">
+                        <Collapsible className="group/collapsible flex flex-col gap-6">
                             <SidebarMenuItem>
                                 <CollapsibleTrigger className="w-full flex flex-row justify-between items-center p-2 rounded-sm hover:bg-o-blue/3 select-none">
                                     Project
@@ -101,7 +88,7 @@ export function AppSidebar() {
                                         <Link href="https://opendrivelab.com/drivelm" target="_blank" className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
                                             DriveLM
                                         </Link>
-                                        <Link href="https://opendrivelab.com/dataset"  className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
+                                        <Link href="https://opendrivelab.com/dataset" className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
                                             more
                                         </Link>
                                     </SidebarMenuSub>
@@ -109,9 +96,7 @@ export function AppSidebar() {
                             </SidebarMenuItem>
                         </Collapsible>
 
-
-
-                        <Collapsible  className="group/collapsible flex flex-col gap-6">
+                        <Collapsible className="group/collapsible flex flex-col gap-6">
                             <SidebarMenuItem>
                                 <CollapsibleTrigger className="w-full flex flex-row justify-between items-center p-2 rounded-sm hover:bg-o-blue/3 select-none">
                                     Publication
@@ -128,7 +113,7 @@ export function AppSidebar() {
                                         <Link href="https://www.computer.org/csdl/journal/tp/2025/03/10791908/22ABgP6PlUQ" target="_blank" className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
                                             BEVFormer
                                         </Link>
-                                        <Link href="https://opendrivelab.com/publications"  className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
+                                        <Link href="https://opendrivelab.com/publications" className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
                                             more
                                         </Link>
                                     </SidebarMenuSub>
@@ -136,9 +121,7 @@ export function AppSidebar() {
                             </SidebarMenuItem>
                         </Collapsible>
 
-
-
-                        <Collapsible  className="group/collapsible flex flex-col gap-6">
+                        <Collapsible className="group/collapsible flex flex-col gap-6">
                             <SidebarMenuItem>
                                 <CollapsibleTrigger className="w-full flex flex-row justify-between items-center p-2 rounded-sm hover:bg-o-blue/3 select-none">
                                     Event
@@ -155,7 +138,7 @@ export function AppSidebar() {
                                         <Link href="https://sagroups.ieee.org/3474/" target="_blank" className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
                                             IEEE Standard P3474
                                         </Link>
-                                        <Link href="https://opendrivelab.com/events"  className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
+                                        <Link href="https://opendrivelab.com/events" className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
                                             more
                                         </Link>
                                     </SidebarMenuSub>
@@ -163,37 +146,21 @@ export function AppSidebar() {
                             </SidebarMenuItem>
                         </Collapsible>
 
-
-
-                        <Link href="https://opendrivelab.com/team"  className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
+                        <Link href="https://opendrivelab.com/team" className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
                             Team
                         </Link>
 
-
-
-                        <Link href="https://opendrivelab.com/recruit"  className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
+                        <Link href="https://opendrivelab.com/recruit" className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
                             Recruit
                         </Link>
-
-
 
                         <Link href="https://github.com/sponsors/OpenDriveLab" target="_blank" className="p-2 rounded-sm hover:bg-o-blue/3 select-none">
                             Sponsor
                         </Link>
-
-
-
-                    </SidebarMenu>
-
-
+                    </SidebarMenu> */}
 
                     <PageSidebar/>
-
-
                 </div>
-
-
-
             </Sidebar>
         </FadeIn>
     )
