@@ -420,7 +420,7 @@ export default function Home() {
                       Start 💫<b className="text-[#004cee]">discovering</b> now!
                     </p>
                     <iframe
-                      src="https://opendrivelab.github.io/FreeTacMan/3d_model/FreeTacMan_Model_simple.html"
+                      src="https://opendrivelab.github.io/FreeTacMan/3d_model/FreeTacMan_Model.html"
                       className="h-[320px] md:h-[480px] lg:h-[640px] border-2 md:border-4 border-white hover:border-[#174BE5] transition-colors duration-300 rounded-lg"
                     ></iframe>
                   </div>
