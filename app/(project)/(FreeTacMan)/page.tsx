@@ -405,7 +405,7 @@ export default function Home() {
                 <div className="flex flex-col gap-3 md:gap-5 h-full">
                   <div className="flex flex-col justify-center gap-3 md:gap-5">
                     <span className="font-bold text-xl md:text-2xl text-center">
-                      Interactive Modal Viewer
+                      Interactive Model Viewer
                     </span>
                     <p className="text-xs sm:text-sm md:text-base text-center max-w-7xl">
                       Dive into our 💡
@@ -813,7 +813,7 @@ export default function Home() {
                     </p>
                     <CardContent className="flex flex-col xl:flex-row gap-3 md:gap-6 justify-between h-full items-center p-2 md:p-6">
                       <div className="flex-3/5 flex flex-col md:flex-row gap-3 w-full xl:w-auto">
-                        <div className="vidoe-inner">
+                        <div className="video-inner">
                           <video
                             preload="none"
                             autoPlay
