@@ -421,7 +421,7 @@ export default function Home() {
                     </p>
                     <iframe
                       src="https://opendrivelab.github.io/FreeTacMan/3d_model/FreeTacMan_Model.html"
-                      className="h-[320px] md:h-[480px] lg:h-[640px] border-2 md:border-4 border-white hover:border-[#174BE5] transition-colors duration-300 rounded-lg"
+                      className="w-[320px] md:w-[480px] lg:w-[640px] h-[240px] md:h-[360px] lg:h-[480px] border-2 md:border-4 border-white hover:border-[#174BE5] transition-colors duration-300 rounded-lg mx-auto"
                     ></iframe>
                   </div>
                   <div className="w-full object-fit bg-white flex flex-col md:flex-row gap-5 md:gap-10 p-4 md:p-10 h-auto md:h-[640px] justify-center">
