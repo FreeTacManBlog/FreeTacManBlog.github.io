@@ -169,6 +169,17 @@ export default function Home() {
               </div>
             </div>
             <span className="text-xs sm:text-sm md:text-base text-center italic text-gray-400">
+              Temporal page. Permanent address:{" "}
+              <Link
+                href="http://opendrivelab.com/blog/freetacman"
+                className="text-blue-500 hover:text-blue-700 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                http://opendrivelab.com/blog/freetacman
+              </Link>
+              <br />
+              <br />
               Good things take time... and so does loading this page! Thanks for
               your patience! Best viewed in Chrome on a desktop.
             </span>
