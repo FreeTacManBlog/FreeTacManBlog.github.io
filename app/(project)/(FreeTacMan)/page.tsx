@@ -36,6 +36,7 @@ import { PolicyRollouts2 } from "@/components/project/freetacman/chart/policy-ro
 import { PolicyRollouts3 } from "@/components/project/freetacman/chart/policy-rollouts-3";
 import { PolicyRollouts4 } from "@/components/project/freetacman/chart/policy-rollouts-4";
 import { PolicyRollouts5 } from "@/components/project/freetacman/chart/policy-rollouts-5";
+import { PolicyRolloutsAverage } from "@/components/project/freetacman/chart/policy-rollouts-average";
 import { UserStudy1 } from "@/components/project/freetacman/chart/user-study-1";
 import { UserStudy2 } from "@/components/project/freetacman/chart/user-study-2";
 import { UserStudy3 } from "@/components/project/freetacman/chart/user-study-3";
@@ -44,6 +45,7 @@ import { UserStudy5 } from "@/components/project/freetacman/chart/user-study-5";
 import { UserStudy6 } from "@/components/project/freetacman/chart/user-study-6";
 import { UserStudy7 } from "@/components/project/freetacman/chart/user-study-7";
 import { UserStudy8 } from "@/components/project/freetacman/chart/user-study-8";
+import { UserStudyAverage } from "@/components/project/freetacman/chart/user-study-average";
 
 const policy_rollouts: { id: string; title: string; color: string }[] = [
   {
@@ -690,12 +692,17 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="w-full flex justify-center mt-5 md:mt-10">
+                  <div className="w-full max-w-6xl">
+                    <PolicyRolloutsAverage />
+                  </div>
+                </div>
+                {/* <div className="w-full flex justify-center mt-5 md:mt-10">
                   <img
                     src="https://opendrivelab.github.io/FreeTacMan/policy_rollouts/policy rollouts_results.png"
                     alt="Policy Rollouts Results"
                     className="max-w-5xl w-full"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="w-full max-w-7xl mt-10 md:mt-20">
@@ -944,12 +951,18 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full flex justify-center mt-5 md:mt-10">
+              <div className="w-full max-w-6xl">
+                <UserStudyAverage />
+              </div>
+            </div>
+
+            {/* <div className="w-full flex justify-center mt-5 md:mt-10">
               <img
                 src="https://opendrivelab.github.io/FreeTacMan/user_study/userstudy_results.png"
                 alt="User Study Results"
                 className="max-w-7xl w-full rounded-xl"
               />
-            </div>
+            </div> */}
             <div className="w-full max-w-full md:max-w-[1400px] px-6 md:px-20 3xl:px-64 mt-5 md:mt-10 p-2 md:p-6 overflow-hidden">
               <Carousel
                 opts={{
