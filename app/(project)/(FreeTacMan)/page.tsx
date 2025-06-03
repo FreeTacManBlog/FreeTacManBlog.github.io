@@ -137,7 +137,7 @@ export default function Home() {
               </div>
               <div className="mt-4 flex flex-row justify-center gap-2 md:gap-4">
                 <a
-                  href="https://arxiv.com"
+                  href="http://arxiv.org/abs/2506.01941"
                   className="px-3 py-1 md:px-4 md:py-2 bg-white text-[#174BE5] rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border border-gray-200 text-xs sm:text-sm md:text-base"
                   target="_blank"
                   rel="noopener noreferrer"
