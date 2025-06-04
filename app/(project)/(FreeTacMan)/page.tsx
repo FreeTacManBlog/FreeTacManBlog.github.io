@@ -171,7 +171,7 @@ export default function Home() {
               </div>
             </div>
             <span className="text-xs sm:text-sm md:text-base text-center italic text-gray-400">
-              Temporal page. Permanent address:{" "}
+              Temporary page. Permanent address:{" "}
               <Link
                 href="http://opendrivelab.com/blog/freetacman"
                 className="text-blue-500 hover:text-blue-700 underline"
