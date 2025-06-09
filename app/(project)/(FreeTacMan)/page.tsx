@@ -161,7 +161,15 @@ export default function Home() {
                   Hardware Guide
                 </a>
                 <a
-                  href="https://x.com/OpenDriveLab"
+                  href="https://opendrivelab.github.io/FreeTacMan/landing/FreeTacMan_demo_video.mp4"
+                  className="px-3 py-1 md:px-4 md:py-2 bg-white text-[#174BE5] rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border border-gray-200 text-xs sm:text-sm md:text-base"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Video
+                </a>
+                <a
+                  href="https://x.com/OpenDriveLab/status/1930234855729836112"
                   className="px-3 py-1 md:px-4 md:py-2 bg-white text-[#174BE5] rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border border-gray-200 text-xs sm:text-sm md:text-base"
                   target="_blank"
                   rel="noopener noreferrer"
